@@ -1,9 +1,9 @@
 
 
-const page = () => {
+const PostPage = () => {
   return (
-    <div>page</div>
+    <div>PostPage</div>
   )
 }
 
-export default page
+export default PostPage
