@@ -4,12 +4,12 @@ import Link from 'next/link';
 
 import { House,
     Aperture } from 'lucide-react';
-// import {
-//   SignedIn,
-//   SignedOut,
-//   SignInButton,
-//   SignOutButton,
-// } from '@clerk/nextjs';
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignOutButton,
+} from '@clerk/nextjs';
 // import MiniProfile from './MiniProfile';
 export default function Sidebar() {
   return (
@@ -26,18 +26,18 @@ export default function Sidebar() {
           <span className='font-bold hidden xl:inline'>Home</span>
         </Link>
         <button className='bg-blue-400 text-white rounded-full  hover:brightness-95 transition-all duration-200 w-48 h-9 shadow-md hidden xl:inline font-semibold'>
-          {/* <SignedIn>
+           <SignedIn>
             <SignOutButton />
           </SignedIn>
           <SignedOut>
             <SignInButton />
-          </SignedOut> */}
-          LogIn
+          </SignedOut> 
+          
         </button>
       </div>
-      {/* <SignedIn>
-        <MiniProfile />
-      </SignedIn> */}
+       <SignedIn>
+        {/* <MiniProfile /> */}
+      </SignedIn> 
     </div>
   );
 }
